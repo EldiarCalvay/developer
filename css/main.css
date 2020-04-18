@@ -1,0 +1,495 @@
+* {
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 3px;
+}
+
+.hamburger {
+    position: fixed;
+    background-color: transparent;
+    left: 0;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    padding: 20px 20px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    z-index: 1002;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .hamburger.is-active {
+        background-color: none;
+    }
+
+._layer {
+    background: #333333;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    width: 28px;
+    height: 4px;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+
+.hamburger:hover .-top {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.hamburger:hover .-bottom {
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.hamburger.is-active .-top {
+    -webkit-transform: translateY(200%) rotate(45deg) !important;
+    -ms-transform: translateY(200%) rotate(45deg) !important;
+    transform: translateY(200%) rotate(45deg) !important;
+}
+
+.hamburger.is-active .-mid {
+    opacity: 0;
+}
+
+.hamburger.is-active .-bottom {
+    -webkit-transform: translateY(-200%) rotate(135deg) !important;
+    -ms-transform: translateY(-200%) rotate(135deg) !important;
+    transform: translateY(-200%) rotate(135deg) !important;
+}
+
+
+#header nav {
+    height: 82px;
+    background: transparent;
+    position: fixed;
+    box-shadow: 0px 0px 0px 0px;
+    z-index: 9999;
+}
+
+.main-menu {
+    display: block;
+    font-size: 17px;
+    float: left;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 20px 40px 0 40px;
+    width: calc(100% - 500px);
+    font-weight: 500;
+}
+
+#main-menu li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+    #main-menu li a {
+        color: white;
+        text-decoration: none;
+    }
+
+.page-banner {
+    min-height: 100vh;
+    background-image: url('../assets/images/footereldic.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+    .page-banner .row {
+        margin-bottom: 0px;
+    }
+
+main .row h1.col {
+    position: absolute;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 17.5px;
+    padding-right: 0px;
+    margin-top: 38%;
+    background: rgba(0, 0, 0, 0.207);
+    width: 80%;
+    text-align: center;
+}
+
+main .row h4.col {
+    position: absolute;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin-top: 80%;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#sobre-mi .row h1.col {
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    letter-spacing: 10px;
+    margin-top: 27%;
+    text-align: center;
+    font-size: 40px;
+}
+
+#sobre-mi .row p.col {
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    padding-right: 0px;
+    margin-top: 15%;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.logo {
+    margin-top: 12px;
+}
+
+#sobre-mi {
+    background-color: rgb(255, 255, 255);
+}
+
+#habilidades {
+    background-image: url('../assets/images/fondeldic.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+#nuestra {
+    background-image: url('../assets/images/originls.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+#contactame {
+    text-align: center;
+    background-image: url('../assets/images/foneldic.png');
+    background-size: cover;
+    background-position: top center;
+}
+
+.scroll-down {
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+.frase {
+    text-align: center;
+    color: #2336e0;
+    margin-top: 50px;
+    margin-left: 45px;
+}
+
+#habilidades .row h1.col {
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 10px;
+    padding-left: 12%;
+    padding-right: 0px;
+    margin-top: 27%;
+    font-size: 40px;
+}
+#nuestra .row h1.col {
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 10px;
+    padding-left: 12%;
+    padding-right: 0px;
+    margin-top: 27%;
+    font-size: 40px;
+}
+.tech {
+    height: 109px;
+    margin-top: 10px;
+}
+
+.skills {
+    text-align: center;
+}
+
+    .skills h3 {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+#habilidades .card {
+    background: rgba(255, 255, 255, 0.842);
+}
+
+#habilidades .skills p {
+    display: inline-block;
+    font-size: 33.5px;
+    font-weight: 500;
+    margin: 17px;
+}
+
+#habilidades .p1 {
+    color: rgb(255, 166, 0);
+}
+
+#habilidades .p2 {
+    color: rgb(61, 189, 240);
+}
+
+#habilidades .p3 {
+    color: rgb(136, 168, 18);
+}
+
+#habilidades .p4 {
+    color: rgb(76, 0, 255);
+}
+
+#habilidades .p5 {
+    color: rgb(247, 119, 105);
+}
+
+
+#nuestra .card {
+    background: rgba(255, 255, 255, 0.842);
+}
+
+#nuestra .skills p {
+    display: inline-block;
+    font-size: 33.5px;
+    font-weight: 500;
+    margin: 17px;
+}
+
+#nuestra .p1 {
+    color: rgb(255, 166, 0);
+}
+
+#nuestra .p2 {
+    color: rgb(61, 189, 240);
+}
+
+#nuestra .p3 {
+    color: rgb(136, 168, 18);
+}
+
+#nuestra .p4 {
+    color: rgb(76, 0, 255);
+}
+
+#nuestra .p5 {
+    color: rgb(247, 119, 105);
+}
+
+#portafolio {
+    text-align: center;
+}
+
+    #portafolio .card-action a {
+        color: #41c85f;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    #portafolio h1 {
+        margin-top: 6.5%;
+        font-weight: 700;
+        letter-spacing: 10px;
+        padding-right: 0px;
+        font-size: 40px;
+    }
+
+    #portafolio .card-title {
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+
+    #portafolio .card-content p {
+        font-weight: 500;
+        font-size: 17px;
+    }
+
+#contactame h1 {
+    margin-top: 6.5%;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: white;
+    font-size: 40px;
+}
+
+#contactame .contc {
+    background-color: rgba(0, 0, 0, 0.555);
+    margin: 10px;
+    padding-top: 20px;
+    height: 130px;
+}
+
+    #contactame .contc:hover {
+        background-color: rgba(0, 0, 0, 0.74);
+    }
+
+    #contactame .contc p {
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    #contactame .contc img {
+        height: 60px;
+    }
+
+#contactame .ult {
+    margin-left: 25%;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.555);
+    color: white;
+    height: 9.5vh;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.frase-contact {
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 7px;
+    margin-top: -15px;
+}
+
+#contactame .cv {
+    background-color: rgba(255, 255, 255, 0.493);
+    padding: 17px 28px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+    #contactame .cv:hover {
+        background-color: #fff;
+    }
+
+/* .intereses {
+  position: absolute;
+  width: 100px;
+} */
+
+#header nav .row .button-collapse {
+    float: right;
+}
+
+    #header nav .row .button-collapse i.material-icons {
+        font-size: 30px;
+        line-height: 2.5;
+    }
+
+@media (min-width: 992px) {
+
+    main .row h1.col {
+        /*margin-top: 18%;*/
+        margin-top: 16%;
+    }
+
+    main .row h4.col {
+        margin-top: 22%;
+    }
+
+    #sobre-mi {
+        height: 100vh;
+    }
+
+    #habilidades {
+        height: 100vh;
+    }
+        #nuestra {
+        height: 100vh;
+    }
+
+    #sobre-mi .row img.col {
+        margin-top: 15%;
+        width: 300px;
+    }
+
+    #sobre-mi .row h1.col {
+        margin-top: 7%;
+        position: absolute;
+        font-size: 4.2rem;
+    }
+
+    #sobre-mi .row p.col {
+        width: 30%;
+        position: absolute;
+    }
+
+    #habilidades .row h1.col {
+        margin-top: 7%;
+        position: absolute;
+        font-size: 4.2rem;
+    }
+      #nuestra .row h1.col {
+        margin-top: 7%;
+        position: absolute;
+        font-size: 4.2rem;
+    }
+    .skills {
+        margin-top: 15%;
+    }
+
+    #portafolio {
+        height: 100vh;
+    }
+
+        #portafolio h1 {
+            font-size: 4.2rem;
+        }
+
+    .contactame-row {
+        height: 100vh;
+    }
+
+    #contactame .contc:first-child {
+        margin-left: 150px;
+    }
+
+    #contactame .contc {
+        background-color: rgba(0, 0, 0, 0.555);
+        margin: 55px;
+        padding-top: 20px;
+        height: 200px;
+    }
+
+    #contactame h1 {
+        font-size: 4.2rem;
+    }
+
+    #contactame .contc p {
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    #contactame .contc img {
+        height: 100px;
+    }
+
+    footer {
+        padding-top: 7px;
+    }
+
+    #contactame .cv {
+        margin-top: 0px;
+    }
+
+
+}
